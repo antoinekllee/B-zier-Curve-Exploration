@@ -153,4 +153,14 @@ public class Coaster : MonoBehaviour
             return BezierCurveTangent(t, newPoints);
         }
     }
+
+    // Use gizmos to draw lines between adjacent waypoints
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        for (int i = 0; i < waypoints.Count - 1; i++)
+        {
+            Gizmos.DrawLine(waypoints[i].position, waypoints[i + 1].position);
+        }
+    }
 }
