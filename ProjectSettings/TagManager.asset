@@ -8,10 +8,10 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Waypoint
   - Water
   - UI
-  - 
+  - Path
   - 
   - 
   - 
@@ -40,4 +40,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Waypoints
+    uniqueID: 2560695759
+    locked: 0
+  - name: Object
+    uniqueID: 877884833
     locked: 0
