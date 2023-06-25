@@ -8,8 +8,8 @@ public class Coaster : MonoBehaviour
 {
     [SerializeField] private List<Transform> waypoints = new List<Transform>();
     [SerializeField] private float width = 0.1f;
-    [SerializeField] private int resolution = 100;
-    [SerializeField] private float speed = 1f; 
+    [SerializeField, MaxValue(500)] private int resolution = 100;
+    [SerializeField, MaxValue(5)] private float speed = 1f; 
     [SerializeField, MustBeAssigned] private Transform bezierObject = null; 
 
     [SerializeField, MustBeAssigned] private Waypoint waypointPrefab = null;
